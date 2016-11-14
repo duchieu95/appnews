@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.store4life">
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.example.googlemaps.permission.MAPS_RECEIVE" />
+    <permission
+        android:name="com.example.googlemaps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity
+            android:name=".Activity.Splash_Screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.UserManager_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LikeProduct_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Cart_Activity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.Setting_Activity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.History_Activity"
+            android:parentActivityName=".Activity.UserManager_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Check_Status_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Login_Activity"
+            android:parentActivityName=".Activity.UserManager_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.signup_Activity"
+            android:parentActivityName=".Activity.Login_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ForgotPass_Activity"
+            android:parentActivityName=".Activity.Login_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DetailCategory_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DetailProduct_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Rate_Activity"
+            android:parentActivityName=".Activity.DetailProduct_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".Activity.DetailNew_Activity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Activity.Question_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.UserDetail_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.Search_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.ChangeInfo_Activity"
+            android:screenOrientation="portrait"></activity>
+        <receiver android:name=".Controller.Nofication"/>
+    </application>
+
+</manifest>

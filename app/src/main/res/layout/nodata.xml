@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logo4life"
+        android:layout_width="wrap_content"
+        android:layout_height="243dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Không có sản phẩm nào"
+        android:textColor="@color/appcolor"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<Button
+    android:id="@+id/btnMuamoi"
+    android:text="Tiếp Tục Mua Sắm"
+    android:layout_marginTop="5dp"
+    android:textColor="#FFFFFF"
+    android:background="@color/appcolor"
+    android:layout_gravity="center"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content" />
+</LinearLayout>

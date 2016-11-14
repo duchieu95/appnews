@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên Sản Phẩm: "
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ten"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tv1" />
+
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá Sản Phẩm: "
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_gia"
+        android:textSize="15dp"
+        android:layout_below="@+id/tv_ten"
+        android:layout_toRightOf="@+id/tv2" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtbar"
+        android:stepSize="1"
+        android:isIndicator="false"
+        android:progressTint="@color/appcolor"
+        android:backgroundTint="@color/appcolor"
+        android:layout_weight="1"
+        android:layout_below="@+id/tv_gia"
+        android:layout_marginLeft="10dp"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+         />
+    <TextView
+        android:id="@+id/xemdanhgia"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF1493"
+        android:text="Xem Đánh Giá"
+        android:gravity="left"
+        android:layout_below="@+id/rtbar"
+        android:layout_marginLeft="14dp"
+        />
+    <ImageButton
+        android:id="@+id/imbGioHang"
+        android:background="@drawable/custom_buttom"
+        android:src="@drawable/giohang_nho"
+        android:layout_gravity="right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:text="Gio Hang"
+        android:layout_below="@+id/tv_gia"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+
+    <ImageButton
+        android:id="@+id/imbYeuThich"
+        android:background="@drawable/custom_buttom"
+        android:src="@drawable/icon_traitim"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="18dp"
+        android:layout_gravity="right"
+        android:text="Yeu Thich"
+        android:layout_alignTop="@+id/imbGioHang"
+        android:layout_toLeftOf="@+id/imbGioHang"
+        android:layout_toStartOf="@+id/imbGioHang"
+        android:layout_marginEnd="18dp" />
+
+
+    <TextView
+        android:paddingLeft="12dp"
+        android:id="@+id/txt_mota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mô Tả Sản Phẩm"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_below="@+id/xemdanhgia"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        />
+
+
+    <TextView
+        android:paddingLeft="12dp"
+        android:id="@+id/mota"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_below="@+id/txt_mota"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/mota"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

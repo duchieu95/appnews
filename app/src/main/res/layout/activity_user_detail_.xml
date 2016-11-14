@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_detail_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.store4life.Activity.UserDetail_Activity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/icon_user"
+        android:id="@+id/IMGUSER"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFF"
+            android:background="@color/appcolor"
+            android:id="@+id/btnChonHinh"
+            android:text="Chọn Hình"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/TEN" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/EMAIL" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/MATKHAU" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/DIENTHOAI" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nhập Địa Chỉ"
+        android:id="@+id/DIACHI" />
+<RadioGroup
+    android:id="@+id/radioGioiTinh"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/radionu"
+        android:text="Nữ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioButton
+        android:id="@+id/radionam"
+        android:text="Nam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RadioGroup>
+
+<Button
+    android:textColor="#FFF"
+    android:background="@color/appcolor"
+    android:text="Hoàn Thành"
+    android:id="@+id/Xong"
+    android:layout_gravity="center"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content" />
+</LinearLayout>

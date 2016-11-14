@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">4LifeStore</string>
+    <string name="open">open</string>
+    <string name="close">Close</string>
+
+    <string name="btnlichsu">Lịch Sử Giao Dịch</string>
+    <string name="thongbao">Bạn Đã Mua Hàng Thành Công! Muốn Kiểm Tra Bạn Hãy Vào Lịch Sử Giao Dịch Để Xem</string>
+    <string name="about">4Life - dự án về ứng dụng bán hàng Online được thực hiện bởi nhóm DNTH, thuộc trường FPT Polytechnic HCM…..Là một trong những App bán hàng ưu việt nhất hiện nay với các tính năng: Tìm kiếm bằng giọng nói, tương tác trực tuyến với cửa hàng, thanh toán nhanh chóng…4Life ra đời khi thị trường App vẫn còn nhiều hạn chế, chưa được chú trọng và nhiều doanh nghiệp Việt Nam chưa sử dụng hình thức bán hàng tiềm năng này. Bên cạnh đó, với việc cập nhật những tính năng chưa hoàn thiện từ các App trên thị trường, cùng việc tạo thêm những tính năng ưu việt hỗ trợ người bán 4Life tự tin trở thành phần mềm được sử dụng nhiều nhất trong thời gian tới.</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textColor="@color/bg"
+            android:textStyle="bold"
+            android:background="@color/appcolor"
+            android:text="Đường Dây Nóng : 1900999"
+            android:id="@+id/btnPhone"
+            android:drawableLeft="@drawable/icon_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textColor="@color/bg"
+            android:textStyle="bold"
+            android:background="@color/appcolor"
+            android:text="Gởi Mail Cho Chúng Tôi"
+            android:id="@+id/btnEmail"
+            android:drawableLeft="@drawable/icon_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textColor="@color/bg"
+            android:textStyle="bold"
+            android:background="@color/appcolor"
+            android:text="Những Câu Hỏi Thường Gặp"
+            android:drawableLeft="@drawable/icon_question"
+            android:id="@+id/btnHoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forgot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:background="#FF1493">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF1493"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="190dp"
+            app:srcCompat="@drawable/logo4life"
+            android:id="@+id/imageView2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1"
+            >
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#fff"
+                android:theme="@style/TextLabel"
+                >
+
+
+                <EditText
+                    android:id="@+id/edtTen"
+                    android:textColor="#FFF"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/line"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="10dp"
+                    android:hint="Họ Và Tên"
+                    android:inputType="text"
+                    android:textSize="24dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel"
+                android:textColorHint="#fff">
+
+
+                <EditText
+                    android:id="@+id/edtMail"
+                    android:textColor="#FFF"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/line"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="24dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/edtDT"
+                    android:textColor="#FFF"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/line"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="10dp"
+                    android:hint="Số Điện Thoại"
+                    android:inputType="phone"
+                    android:textSize="24dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnQuenMK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:textColor="#FF1493"
+                android:text="Tìm Mật Khẩu"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

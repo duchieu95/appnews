@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "476148346362",
+    "project_id": "firebase-lifecom"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476148346362:android:afbf73227938954a",
+        "android_client_info": {
+          "package_name": "com.example.store4life"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476148346362-pqe430htab53gh9roh0kqf3689omjfs6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.store4life",
+            "certificate_hash": "54A765E715888E2E14F9211153E207FA1D4868CF"
+          }
+        },
+        {
+          "client_id": "476148346362-1ejdvibbiukkqs6s30jtarb2r4kp1q64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFjfj3RRrgwKMOR78f1mfXYC1QohRvaxA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
